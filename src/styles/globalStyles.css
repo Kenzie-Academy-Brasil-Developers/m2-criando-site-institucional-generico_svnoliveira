@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+/* Brand colors */
+--primary-color: #4C6EF5;
+--secondary-color: #364FC7;
+
+/* Grey colors */
+--grey-darkest: #191C1F;
+--grey-dark: #212529;
+--grey-basic-dark: #343A40;
+--grey-basic-light: #ADB5BD;
+--grey-light: #CED4DA;
+--grey-lightest: #F8F9FA;
+
+/* spacing sizes*/
+--padding-default: 20px 32px;
+--padding-form: 40px 30px;
+--padding-sides: 240px;
+--paddig-vertical: 90px;
+--padding-input: 14px 20px;
+--gap-default: 44px;
+
+/* Font style */
+--tittle-large: normal normal 600 52px/72px 'Inter';
+--tittle-medium: normal normal 600 40px/64px 'Inter';
+--tittle-small: normal normal 400 32px/44px 'Inter';
+--text-large: normal normal 400 28px/44px 'Inter';
+--text-medium: normal normal 400 20px/30px 'Inter';
+--text-small: normal normal 400 18px/27px 'Inter';
+}
+
+body, button, form {
+    font-family: 'Inter';
+    background-color: var(--grey-dark);
+    color: var(--grey-lightest);
+}
+
+/* Text classes */
+.text-color--darker{
+    color: var(--grey-basic-light)
+}
+
+.text-color--blue{
+    color: var(--secondary-color);
+
+}
+.tittle-large{
+    font: var(--tittle-large)
+}
+
+.tittle-medium{
+    font: var(--tittle-medium)
+}
+
+.tittle-small{
+    font: var(--tittle-small)
+}
+
+.text-large{
+    font: var(--text-large)
+}
+
+.text-medium{
+    font: var(--text-medium)
+}
+
+.text-small{
+    font: var(--text-small)
+}
+
+/* Input style*/
+input {
+    padding: var(--padding-input);
+    color: var(--grey-basic-light);
+    background-color: var(--grey-basic-dark);
+    border: 1px solid var(--grey-basic-dark);
+    outline: none;
+}
+
+input:focus {
+    background-color: var(--grey-dark);
+    border-color: var(--secondary-color);
+}
+
+input:valid {
+    background-color: var(--grey-darkest);
+    border-color: var(--grey-darkest);
+}
+
+input::placeholder {
+    color: var(--grey-basic-light);
+}
+
+/* Flex classes */
+
+.flex-default {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.flex-default--column {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-default);
+}

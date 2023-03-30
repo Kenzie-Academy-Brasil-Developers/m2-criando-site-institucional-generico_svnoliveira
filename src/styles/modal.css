@@ -1,0 +1,27 @@
+dialog::backdrop {
+    background-color: rgba(0,0,0, 0.8);
+}
+
+#main__modal-controller{
+    background-color: var(--grey-dark);
+    border-color: var(--secondary-color);
+    width: 30%;
+    height: 470px;
+}
+
+.main__modal-container {
+    padding: var(--padding-form);
+}
+
+.modal__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.close-modal {
+    background-color: var(--grey-basic-dark);
+    padding: 0px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}

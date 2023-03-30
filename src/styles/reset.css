@@ -1,0 +1,10 @@
+html, body, header, button, main, div, h1, p, span, h2, h3, section, ul, li, footer, form {
+    padding: 0;
+    border: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+ol, ul {
+	list-style: none;
+}

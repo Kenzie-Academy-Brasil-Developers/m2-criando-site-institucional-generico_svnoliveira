@@ -1,0 +1,19 @@
+.button-default--blue{
+    background-color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+}
+.button-default--black{
+    background-color: var(--grey-darkest);
+    border: 2px solid var(--grey-lightest);
+}
+
+.button-default--black, .button-default--blue{
+    padding: var(--padding-default);
+    transition: 0.4s;
+}
+
+.button-default--black:hover, .button-default--blue:hover {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+    cursor: pointer;
+}
